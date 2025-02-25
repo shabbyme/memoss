@@ -12,29 +12,30 @@
 	<link href="assets/css/highlight.github.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/custom.css" rel="stylesheet" type="text/css">
 	<title>Memos Top</title>
-<style>
-        .blur-container {
-            width: 100%;
-            height: 100vh;
-            background-image: url('https://www.loliapi.com/acg/'); /* 替换为你的图片URL */
+ <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            background-image: url('https://example.com/your-image.jpg');
             background-size: cover;
-            background-position: center;
-            
-            /* 模糊效果 */
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px); /* 兼容Safari */
-            
-            /* 可选：提升文字可读性 */
-            color: white;
-            padding: 20px;
-            text-align: center;
+            filter: blur(5px); /* 全局模糊 */
         }
-</style>
+        .content {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2em;
+            text-align: center;
+            background-color: rgba(0,0,0,0.5); /* 半透明遮罩 */
+        }
+  </style>
 
 </head>
 
 <body>
-	<div class="blur-container">
+	<div class="content">
 	<header>
 		<div class="menu">
 			<div class="title">Memos</div>
