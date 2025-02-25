@@ -12,6 +12,34 @@
 	<link href="assets/css/highlight.github.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/custom.css" rel="stylesheet" type="text/css">
 	<title>Memos Top</title>
+	<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* 使用的图像 */
+  background-image: url("https://www.loliapi.com/acg/");
+  
+  /* 添加模糊效果 */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* 全高 */
+  height: 100%; 
+  
+  /* 居中并很好地缩放图像 */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ </style>
 
 </head>
 
@@ -43,6 +71,7 @@
 		<blockquote id="tag-filter" class="filter">
 			<div id="tags"></div>
 		</blockquote>
+		<div class="bg-image"></div>
 
 		<div id="memos" class="memos">
 			<!-- Memos Container -->
