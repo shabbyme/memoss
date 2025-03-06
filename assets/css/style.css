@@ -217,3 +217,21 @@ footer {
     color: var(--color-memos-id);
     font-size: 14px;
 }
+/* 强制显示关键容器 */
+#memos,
+.timeline,
+.memos__content,
+.memos__text {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* 重置布局 */
+#memos {
+  min-height: auto !important;
+  margin: 0 !important;
+  padding: 16px !important;
+}
